@@ -1,13 +1,21 @@
 import React from "react";
 import Link from "next/link";
 
-const CategoryCard = ({ name, image, productList }) => (
+interface CategoryCardProps {
+  name: string;
+  image: string;
+  productList: string[];
+}
+
+const CategoryCard = ({ name, image, productList }: CategoryCardProps) => (
   <article className="flex flex-col w-80 md:w-96 shadow-lg bg-gray-200 rounded-md">
     <div className="flex flex-col gap-2 px-6 py-4">
       <p className="text-xl text-center font-medium text-[#063B54]">{name}</p>
       <ul className="list-disc list-inside">
         {productList.map((product, index) => (
-          <li key={index} className="text-gray-700">{product}</li>
+          <li key={index} className="text-gray-700">
+            {product}
+          </li>
         ))}
       </ul>
     </div>
@@ -77,9 +85,12 @@ export const Products = () => {
           ))}
         </div>
         <div className="flex flex-col gap-4 min-w-96 max-w-96 rounded overflow-hidden text-center p-4">
-          <h3 className="text-2xl font-bold text-[#063B54] mb-2">Ver más productos</h3>
+          <h3 className="text-2xl font-bold text-[#063B54] mb-2">
+            Ver más productos
+          </h3>
           <p className="text-xl text-gray-700">
-            Descubre nuestra amplia gama de productos en la sección de productos.
+            Descubre nuestra amplia gama de productos en la sección de
+            productos.
           </p>
           <Link href="#">
             <button className="bg-[#458922] hover:bg-[#6A9643] text-white text-xl font-bold py-3 px-6 rounded-full inline-block">
