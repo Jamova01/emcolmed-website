@@ -49,7 +49,6 @@ export const Footer = () => {
             </h3>
             <div className="flex flex-col gap-1">
               <p className="text-[#CCCCCC] text-base text-end">
-                <span className="block">+57 3206336789</span>
                 <span className="block">+57 3113001827</span>
                 <span className="block">(602) 3733886</span>
               </p>
