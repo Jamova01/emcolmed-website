@@ -4,9 +4,9 @@ import "./globals.css";
 
 // Define un array de links
 const linksArray = [
-  { id: "1", title: "Inicio", url: "#" },
+  { id: "1", title: "Inicio", url: "/" },
   { id: "2", title: "Emcolmed", url: "#" },
-  { id: "3", title: "Productos", url: "#" },
+  { id: "3", title: "Productos", url: "/products" },
   { id: "4", title: "Contáctanos", url: "#" },
 ];
 
