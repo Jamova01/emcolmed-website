@@ -5,52 +5,107 @@ export const AlliedBrands = () => {
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1494253109108-2e30c049369b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/brands/brand_1.svg",
     },
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1494253109108-2e30c049369b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/brands/brand_2.svg",
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1494253109108-2e30c049369b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/brands/brand_3.png",
     },
     {
       id: 4,
       image:
-        "https://images.unsplash.com/photo-1494253109108-2e30c049369b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/brands/brand_5.jpeg",
     },
     {
       id: 5,
       image:
-        "https://images.unsplash.com/photo-1494253109108-2e30c049369b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/brands/brand_6.png",
     },
     {
       id: 6,
       image:
-        "https://images.unsplash.com/photo-1494253109108-2e30c049369b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/brands/brand_7.png",
+    },
+    {
+      id: 7,
+      image:
+        "/brands/brand_8.png",
+    },
+    {
+      id: 8,
+      image:
+        "/brands/brand_9.png",
+    },
+    {
+      id: 9,
+      image:
+        "/brands/brand_10.png",
+    },
+    {
+      id: 10,
+      image:
+        "/brands/brand_11.png",
+    },
+    {
+      id: 11,
+      image:
+        "/brands/brand_12.png",
+    },
+    {
+      id: 12,
+      image:
+        "/brands/brand_13.png",
+    },
+    {
+      id: 13,
+      image:
+        "/brands/brand_14.png",
+    },
+    {
+      id: 14,
+      image:
+        "/brands/brand_15.png",
+    },
+    {
+      id: 15,
+      image:
+        "/brands/brand_16.webp",
+    },
+    {
+      id: 16,
+      image:
+        "/brands/brand_17.png",
+    },
+    {
+      id: 17,
+      image:
+        "/brands/brand_18.png",
     },
   ];
 
   return (
-    <div className=" flex flex-col mx-auto py-8 w-full">
+    <div className="flex flex-col mx-auto py-8 w-full">
       <h2 className="text-4xl font-bold text-center text-[#063B54] mb-8">
         Marcas aliadas
       </h2>
-      <div className="flex w-full flex-nowrap">
-        <ul className="flex animate-marqueeX">
+      <div className="w-full inline-flex flex-nowrap overflow-x-hidden">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
           {brands.map((brand) => (
             <li key={brand.id}>
-              <Image src={brand.image} width={600} height={300} alt="" />
+              <Image src={brand.image} width={200} height={200} alt="" />
             </li>
           ))}
         </ul>
-        <ul className="flex animate-marqueeX">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
           {brands.map((brand) => (
             <li key={brand.id}>
-              <Image src={brand.image} width={600} height={300} alt="" />
+              <Image src={brand.image} width={200} height={200} alt="" />
             </li>
           ))}
         </ul>
