@@ -7,7 +7,7 @@ const linksArray = [
   { id: "1", title: "Inicio", url: "/" },
   { id: "2", title: "Emcolmed", url: "/about-us" },
   { id: "3", title: "Productos", url: "/products" },
-  { id: "4", title: "Contáctanos", url: "#contact-us" },
+  { id: "4", title: "Contáctanos", url: "/#contact-us" },
 ];
 
 export const metadata = {
