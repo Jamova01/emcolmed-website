@@ -4,7 +4,9 @@ export default function AboutUs() {
   return (
     <div className="container mx-auto p-8">
       <section className="mb-8">
-        <h2 className="text-3xl font-bold mb-4">Nuestra Empresa</h2>
+        <h2 className="text-2xl font-bold text-[#063B54] mb-2">
+          Nuestra Empresa
+        </h2>
         <p className="text-gray-700">
           <b>EMCOLMED S.A.S.</b> es una compañía colombiana dedicada al sector
           de la salud. Nos especializamos en la venta, distribución y
@@ -13,7 +15,6 @@ export default function AboutUs() {
           otros productos relacionados con la salud.
         </p>
       </section>
-
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="md:order-2">
           <img
@@ -22,10 +23,9 @@ export default function AboutUs() {
             alt="Imagen de la empresa"
           />
         </div>
-
         <div className="md:order-1">
           <section className="mb-8">
-            <h2 className="text-3xl font-bold mb-4">Misión</h2>
+            <h2 className="text-2xl font-bold text-[#063B54] mb-2">Misión</h2>
             <p className="text-gray-700">
               Ofrecemos servicios como operador logístico en dispensación,
               suministro y comercialización de medicamentos e insumos
@@ -35,9 +35,8 @@ export default function AboutUs() {
               satisfacción de nuestros clientes y usuarios.
             </p>
           </section>
-
           <section className="mb-8">
-            <h2 className="text-3xl font-bold mb-4">Visión</h2>
+            <h2 className="text-2xl font-bold text-[#063B54] mb-2">Visión</h2>
             <p className="text-gray-700">
               Posicionar a EMCOLMED en los próximos dos años como el operador
               logístico y distribuidor mayorista a nivel departamental,
