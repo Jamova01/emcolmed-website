@@ -1,6 +1,6 @@
 const products = [
   {
-    category: "Medical and Surgical Supplies",
+    category: "Suministros Médicos y Quirúrgicos",
     items: [
       {
         name: "Algodón",
