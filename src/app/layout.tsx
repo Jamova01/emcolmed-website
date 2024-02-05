@@ -22,9 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="">
         <Navbar links={linksArray} />
-        {children}
+        <main className="py-8">{children}</main>
         <Footer />
       </body>
     </html>
