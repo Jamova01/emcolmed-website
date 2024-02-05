@@ -92,7 +92,7 @@ export const Products = () => {
             Descubre nuestra amplia gama de productos en la sección de
             productos.
           </p>
-          <Link href="#">
+          <Link href="/products">
             <button className="bg-[#458922] hover:bg-[#6A9643] text-white text-xl font-bold py-3 px-6 rounded-full inline-block">
               Ir a productos
             </button>
