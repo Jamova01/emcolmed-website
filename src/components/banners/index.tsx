@@ -30,7 +30,7 @@ const sliders = [
     image: "/slider_3.png",
     text: "Salvemos vidas juntos.",
     buttonLabel: "Contáctanos",
-    buttonLink: "/contact",
+    buttonLink: "#contact-us",
   },
 ];
 
