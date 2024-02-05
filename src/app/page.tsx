@@ -4,7 +4,7 @@ import { Products } from "@/components/products/";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <div className="flex flex-col">
       <Hero />
       <Products />
       <AlliedBrands />
@@ -82,6 +82,6 @@ export default function Home() {
           </div>
         </form>
       </div>
-    </main>
+    </div>
   );
 }
