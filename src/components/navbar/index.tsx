@@ -32,7 +32,7 @@ const MenuLink = ({ link }: MenuLinkProps) => {
 export const Navbar = ({ links, ...props }: NavbarProps) => {
   return (
     <header
-      className="static top-0 z-50 flex-shrink-0 py-4 bg-white md:sticky"
+      className="static top-0 z-50 flex-shrink-0 py-4 bg-white shadow-md md:sticky"
       {...props}
     >
       <div className="container flex flex-col items-start justify-between px-6 mx-auto md:flex-row md:items-center">
