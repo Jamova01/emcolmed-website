@@ -1,10 +1,11 @@
 import { AlliedBrands } from "@/components/allied-brands";
 import { Hero } from "@/components/hero/";
 import { Products } from "@/components/products/";
+import { WhatsappButton } from "@/components/ui/whatsapp-button";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
       <Hero />
       <Products />
       <AlliedBrands />
@@ -82,6 +83,7 @@ export default function Home() {
           </div>
         </form>
       </div>
+      <WhatsappButton />
     </div>
   );
 }
