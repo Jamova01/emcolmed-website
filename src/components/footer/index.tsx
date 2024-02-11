@@ -3,6 +3,8 @@ import Link from "next/link";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="flex flex-col px-6 py-8 mx-auto bg-[#063B54]">
       <ul className="flex flex-col md:flex-row md:justify-between md:items-start items-end gap-6">
@@ -66,6 +68,12 @@ export const Footer = () => {
           </div>
         </li>
       </ul>
+      <div className="flex justify-center items-center py-8">
+        <p className="text-[#CCCCCC]">
+          Derechos de autor © {currentYear}, Emcolmed. Todos los derechos
+          reservados.
+        </p>
+      </div>
     </footer>
   );
 };
