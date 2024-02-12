@@ -41,30 +41,78 @@ export const Banners = () => {
   return (
     <Carousel className="relative" plugins={[plugin.current]}>
       <CarouselContent>
-        {sliders.map(({ image, text, buttonLabel, buttonLink }, index) => (
-          <CarouselItem key={index}>
-            <Card
-              className="flex bg-no-repeat bg-center bg-cover relative overflow-hidden"
-              style={{ backgroundImage: `url(${image})`, height: "72vh" }}
-            >
-              <CardContent className="flex flex-col justify-center items-center h-full w-full px-6 py-0 absolute bottom-0 left-0 right-0 top-0 text-white">
-                <div className="bg-black bg-fixed opacity-45 absolute inset-0"></div>
-                <article className="flex flex-col z-10 max-w-[500px]">
-                  <h2 className="text-xl md:text-3xl text-center font-medium mb-4">
-                    {text}
-                  </h2>
-                  <button
-                    onClick={() => router.push(buttonLink)}
-                    type="button"
-                    className="w-full md:w-72 mx-auto bg-[#458922] hover:bg-[#6A9643] text-xl text-white font-medium py-3 px-6 rounded-full inline-block relative"
-                  >
-                    {buttonLabel}
-                  </button>
-                </article>
-              </CardContent>
-            </Card>
-          </CarouselItem>
-        ))}
+        <CarouselItem>
+          <Card
+            className="flex bg-no-repeat bg-center bg-cover relative overflow-hidden"
+            style={{
+              backgroundImage: `url(${sliders[0].image})`,
+              height: "72vh",
+            }}
+          >
+            <CardContent className="flex justify-end items-center h-full w-full px-6 py-0 absolute bottom-0 left-0 right-0 top-0 text-white">
+              <article className="flex flex-col md:mr-20 z-10 max-w-[500px]">
+                <h2 className="text-xl md:text-3xl text-center font-medium mb-4">
+                  {sliders[0].text}
+                </h2>
+                <button
+                  onClick={() => router.push(sliders[0].buttonLink)}
+                  type="button"
+                  className="w-full md:w-72 mx-auto bg-[#458922] hover:bg-[#6A9643] text-xl text-white font-medium py-3 px-6 rounded-full inline-block relative"
+                >
+                  {sliders[0].buttonLabel}
+                </button>
+              </article>
+            </CardContent>
+          </Card>
+        </CarouselItem>
+        <CarouselItem>
+          <Card
+            className="flex bg-no-repeat bg-center bg-cover relative overflow-hidden"
+            style={{
+              backgroundImage: `url(${sliders[1].image})`,
+              height: "72vh",
+            }}
+          >
+            <CardContent className="flex justify-end items-center h-full w-full px-6 py-0 absolute bottom-0 left-0 right-0 top-0 text-white">
+              <article className="flex flex-col md:mr-20 z-10 max-w-[500px]">
+                <h2 className="text-xl md:text-3xl text-center font-medium mb-4">
+                  {sliders[1].text}
+                </h2>
+                <button
+                  onClick={() => router.push(sliders[1].buttonLink)}
+                  type="button"
+                  className="w-full md:w-72 mx-auto bg-[#458922] hover:bg-[#6A9643] text-xl text-white font-medium py-3 px-6 rounded-full inline-block relative"
+                >
+                  {sliders[1].buttonLabel}
+                </button>
+              </article>
+            </CardContent>
+          </Card>
+        </CarouselItem>
+        <CarouselItem>
+          <Card
+            className="flex bg-no-repeat bg-center bg-cover relative overflow-hidden"
+            style={{
+              backgroundImage: `url(${sliders[2].image})`,
+              height: "72vh",
+            }}
+          >
+            <CardContent className="flex items-center h-full w-full px-6 py-0 absolute bottom-0 left-0 right-0 top-0 text-white">
+              <article className="flex flex-col md:ml-20 z-10 max-w-[500px]">
+                <h2 className="text-xl md:text-3xl text-center font-medium mb-4">
+                  {sliders[1].text}
+                </h2>
+                <button
+                  onClick={() => router.push(sliders[1].buttonLink)}
+                  type="button"
+                  className="w-full md:w-72 mx-auto bg-[#458922] hover:bg-[#6A9643] text-xl text-white font-medium py-3 px-6 rounded-full inline-block relative"
+                >
+                  {sliders[1].buttonLabel}
+                </button>
+              </article>
+            </CardContent>
+          </Card>
+        </CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />

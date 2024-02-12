@@ -16,10 +16,10 @@ export const Products = () => {
         </h2>
       </header>
       <div className="flex flex-col gap-4 min-w-96 max-w-96 rounded overflow-hidden text-center p-4">
-        <h3 className="text-2xl font-bold text-[#063B54] mb-2">
+        <h3 className="text-2xl font-bold text-black mb-2">
           Ver más productos
         </h3>
-        <p className="text-xl text-gray-700">
+        <p className="text-xl text-black">
           Descubre nuestra amplia gama de productos en la sección de productos.
         </p>
         <Link href="/products">
