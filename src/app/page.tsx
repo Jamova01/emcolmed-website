@@ -28,7 +28,7 @@ export default function Home() {
             <p>Sábados: 8am – 12:30pm</p>
           </div>
         </div>
-        <form className="max-w-md mx-auto w-96">
+        <form className="max-w-md mx-auto w-80">
           <div className="mb-4">
             <label
               htmlFor="nombre"
