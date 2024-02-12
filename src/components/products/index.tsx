@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Products = () => {
   return (
     <section
-      className="flex flex-col items-center w-full mx-auto py-10 bg-no-repeat bg-center bg-cover relative overflow-hidden"
+      className="flex flex-col justify-center items-center w-full mx-auto py-10 bg-no-repeat bg-center bg-cover relative overflow-hidden"
       style={{
         backgroundImage: `url('/products_section.png')`,
         height: "52vh",
@@ -16,10 +16,7 @@ export const Products = () => {
         </h2>
       </header>
       <div className="flex flex-col gap-4 min-w-96 max-w-96 rounded overflow-hidden text-center p-4">
-        <h3 className="text-2xl font-bold text-black mb-2">
-          Ver más productos
-        </h3>
-        <p className="text-xl text-black">
+        <p className="text-2xl text-white font-bold">
           Descubre nuestra amplia gama de productos en la sección de productos.
         </p>
         <Link href="/products">
