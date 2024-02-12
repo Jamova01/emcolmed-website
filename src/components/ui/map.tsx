@@ -8,18 +8,18 @@ interface MapProps {
 }
 
 export const Map: React.FC<MapProps> = ({ center, attribution }) => {
-  const mapRef = useRef<MapContainer>(null);
+  // const mapRef = useRef<MapContainer>(null);
 
   return (
     <MapContainer
-      center={center}
-      zoom={13}
-      ref={mapRef}
+      // center={center}
+      // zoom={13}
+      // ref={mapRef}
       style={{ height: "352px", width: "352px" }}
       className="-z-10"
     >
       <TileLayer
-        attribution={attribution}
+        // attribution={attribution}
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={center}>
