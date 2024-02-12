@@ -1,7 +1,7 @@
 import { AlliedBrands } from "@/components/allied-brands";
 import { Hero } from "@/components/hero/";
 import { Products } from "@/components/products/";
-import { Map } from "@/components/ui/map";
+// import { Map } from "@/components/ui/map";
 import { WhatsappButton } from "@/components/ui/whatsapp-button";
 
 export default function Home() {
@@ -86,7 +86,7 @@ export default function Home() {
             </button>
           </div>
         </form>
-        <Map />
+        {/* <Map /> */}
       </div>
       <WhatsappButton />
     </div>
