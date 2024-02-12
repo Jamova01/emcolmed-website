@@ -10,7 +10,10 @@ export default function Home() {
       <Hero />
       <Products />
       <AlliedBrands />
-      <div className="container mx-auto mt-10" id="contact-us">
+      <div
+        className="container flex flex-col gap-8 mx-auto mt-10"
+        id="contact-us"
+      >
         <h2 className="text-4xl font-bold text-center text-[#063B54] mb-6">
           Contáctanos
         </h2>
@@ -25,7 +28,7 @@ export default function Home() {
             <p>Sábados: 8am – 12:30pm</p>
           </div>
         </div>
-        <form className="max-w-md mx-auto">
+        <form className="max-w-md mx-auto w-96">
           <div className="mb-4">
             <label
               htmlFor="nombre"
@@ -82,8 +85,8 @@ export default function Home() {
               Enviar
             </button>
           </div>
-          <Map />
         </form>
+        <Map />
       </div>
       <WhatsappButton />
     </div>
